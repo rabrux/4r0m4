@@ -1,0 +1,54 @@
+@use "_core/index"
+
+@use "transformations"
+@use "animations"
+
+// local
+@use "root"
+
+@use "cite"
+@use "text"
+
+\:root
+  // -------------------- global
+  --background: #f4f4f4
+  --square: var( --size-7x )
+  --air: calc( var( --square ) * 0.33 * 0.5 )
+
+  // -------------------- colors
+  --accent: #a1905e
+
+  // header
+  --header-background: #fff
+
+  // -------------------- aside
+  --aside-width: calc( var( --size ) * 35 )
+  --aside-background: rgba( 195, 204, 206, 0.35 )
+  --aside-header-background: var( --header-background )
+
+  // -------------------- card
+  --card-background: #fff
+
+  // -------------------- table
+  --table-header-background: rgba( 161, 144, 94, 0.35 )
+  --table-header-color: black
+  --table-row-even-background: rgba( 161, 144, 94, 0.14 )
+  --table-row-even-color: inherit
+  --table-row-hover-background: rgba( 161, 144, 94, 0.21 )
+  --table-row-hover-color: inherit
+  --table-action-button-background: transparent
+  --table-action-button-color: #d49d35
+  --table-action-button-background-hover: rgba( 161, 144, 94, 0.21 )
+  --table-action-button-color-hover: #d49d35
+
+  // -------------------- input
+  --input-background: #d8dbba
+  --input-color: var( --accent )
+
+  // -------------------- modal
+  --modal-outer-area-background: rgba( 246, 238, 212, 0.70 )
+  --modal-background: rgba( 216, 219, 186, 0.35 )
+
+  // -------------------- tag
+  --tag-active-background: rgba( 197, 27, 36, 0.21 )
+  --tag-active-color: inherit

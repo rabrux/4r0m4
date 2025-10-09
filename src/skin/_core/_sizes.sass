@@ -1,0 +1,40 @@
+// sizes
+
+=sizes
+  @for $i from 2 through 8
+    --size-#{ $i }x: #{ 0.4375rem * $i }
+
+@for $i from 2 through 8
+  .size-#{ $i }x
+    font-size: var( --size-#{ $i }x )
+
+.size-1x2
+  font-size: var( --size-1x2 )
+
+.size-1x4
+  font-size: var( --size-1x4 )
+
+.size-2x1
+  font-size: var( --size-1x2 )
+
+.size-2x4
+  font-size: var( --size-2x4 )
+
+.size-2x8
+  font-size: var( --size-2x8 )
+
+.size-3x5
+  font-size: var( --size-3x5 )
+
+\:root
+  --size: 0.4375rem
+  +sizes // 2 - 8
+
+  --size-1x2: 0.21875rem
+  --size-1x4: 0.6124rem
+
+  --size-2x1: 0.9187rem
+  --size-2x4: 1.05rem
+  --size-2x8: 1.2249rem
+
+  --size-3x5: 1.53125rem

@@ -1,0 +1,9 @@
+$sizes: ( "octo": .125, "quarter": .25, "half": .5, "none": none, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6 )
+
+=box-sizes
+  @each $name, $value in $sizes
+    &.#{ $name }
+      flex: $value !important
+
+*
+  +box-sizes

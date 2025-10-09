@@ -1,0 +1,83 @@
+.vs
+  display: flex
+  overflow: auto
+
+  & > .bar
+    width: var( --square )
+    height: auto
+    flex-direction: column
+
+  &.reverse
+    flex-direction: row-reverse
+
+.hs
+  display: flex
+  flex-direction: column
+  overflow: auto
+
+  &.reverse
+    flex-direction: column-reverse
+
+.wrap
+  flex-wrap: wrap
+
+  .vs
+    overflow: initial
+
+.gap
+  gap: var( --air )
+
+.air
+  margin: var( --air )
+
+.air-left
+  margin-left: var( --air )
+
+.air-right
+  margin-right: var( --air )
+
+.air-top
+  margin-top: var( --air )
+
+.air-bottom
+  margin-top: var( --air )
+
+@for $i from 2 through 8
+  .gap-#{ $i }x
+    gap: calc( var( --air ) * $i )
+
+
+  .air-#{ $i }x
+    margin: calc( var( --air ) * $i )
+
+.bar
+  display: flex
+  height: var( --square )
+
+.space-between
+  justify-content: space-between
+
+.space-around
+  justify-content: space-around
+
+.overflow-y
+  overflow-y: auto
+
+.ai-center
+  align-items: center
+
+.jc-center
+  justify-content: center
+
+.red
+  background: red
+.blue
+  background: blue
+.pink
+  background: pink
+.orange
+  background: orange
+.purple
+  background: purple
+.cyan
+  background: cyan

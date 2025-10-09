@@ -1,0 +1,13 @@
+@for $i from 1 through 72
+  $deg: $i * 5
+
+  .rotate-#{ $deg }
+    background: red
+    transform: rotate( #{ $deg }deg )
+
+  .rotate-#{ $deg }-r
+    background: red
+    transform: rotate( -#{ $deg }deg )
+
+.uppercase
+  text-transform: uppercase
