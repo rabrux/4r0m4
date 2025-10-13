@@ -6,14 +6,31 @@
 // local
 @use "root"
 
+@use "bar"
+
 @use "cite"
 @use "text"
+@use "full"
+@use "oil-list"
 
 \:root
   // -------------------- global
   --background: #f4f4f4
   --square: var( --size-7x )
   --air: calc( var( --square ) * 0.33 * 0.5 )
+
+  // -------------------- colors
+  --menu-background: var( --background )
+
+  // -------------------- tags
+  --tag-background: rgba( 110, 110, 110, 0.3 )
+  --tag-color: inherit
+
+  // -------------------- tags
+  --bar-button-background: inherit
+  --bar-button-color: inherit
+  --bar-button-background-hover: rgba( 66, 66, 66, 0.35 )
+  --bar-button-color-hover: inherit
 
   // -------------------- colors
   --accent: #a1905e

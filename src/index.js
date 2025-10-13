@@ -1,14 +1,50 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
-import reportWebVitals from './reportWebVitals'
-import './skin/index.sass'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import App from 'App'
+import Redirect from 'components/Redirect'
+import Main from 'sections/main'
+import AceitesEsenciales from 'sections/aceites-esenciales'
+
+import reportWebVitals from 'reportWebVitals'
+import 'skin/index.sass'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" Component={ App }>
+          <Route path="main" Component={ Main } />
+
+          <Route path="aceites-esenciales" Component={ AceitesEsenciales } />
+
+          <Route
+            index
+            element={ <Redirect to="/main" /> }
+          />
+
+          <Route
+            path="*"
+            element={ <Redirect to="/main" /> }
+          />
+        { /*
+          <Route
+            index
+            element={ <Redirect to="/main" /> }
+          />
+
+          <Route
+            path="*"
+            element={ <Redirect to="/main" /> }
+          />
+          */ }
+
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 )
 

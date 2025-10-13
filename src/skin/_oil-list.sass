@@ -1,0 +1,49 @@
+.oil-list
+  display: flex
+  flex-direction: column
+  gap: var( --air )
+
+  .oil-card
+    flex: 1
+    display: flex
+    flex-direction: column
+
+    .header
+      display: flex
+      gap: var( --air )
+
+      .icon
+        align-self: flex-start
+        width: 140px
+
+      .title
+        flex: 1
+        display: flex
+        flex-direction: column
+
+        h1
+          font-size: var( --size-4x )
+
+        i
+          font-size: var( --size-2x )
+
+    .tags
+      display: flex
+      gap: calc( var( --air ) * 0.5 )
+      flex-wrap: wrap
+
+      li
+        background: var( --tag-background )
+        color: var( --tag-color )
+        padding: calc( var( --air ) * 0.7 )
+        font-size: var( --size-2x1 )
+
+    &:nth-child(even)
+
+      .header
+        flex-direction: row-reverse
+
+    &:nth-child(odd)
+      .header
+        .title
+          align-items: end

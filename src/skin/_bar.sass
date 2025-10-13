@@ -1,0 +1,28 @@
+.bar
+  display: flex
+
+  h1,
+  input
+    flex: 1
+
+    font-size: var( --size-2x8 )
+
+  input
+    background: transparent
+    border: none
+
+  button
+    background: var( --bar-button-background )
+    color: var( --bar-button-color )
+
+    min-width: var( --square )
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+    font-size: var( --size-2x8 )
+
+    &:hover
+      background: var( --bar-button-background-hover )
+      color: var( --bar-button-color-hover )
