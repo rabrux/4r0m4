@@ -12,10 +12,12 @@
 @use "text"
 @use "full"
 @use "oil-list"
+@use "fullscreen"
+@use "oil-detail"
 
 \:root
   // -------------------- global
-  --background: #f4f4f4
+  --background: #e8e5da
   --square: var( --size-7x )
   --air: calc( var( --square ) * 0.33 * 0.5 )
 
@@ -31,6 +33,10 @@
   --bar-button-color: inherit
   --bar-button-background-hover: rgba( 66, 66, 66, 0.35 )
   --bar-button-color-hover: inherit
+
+  // -------------------- oil-list
+  --oil-card-background: #fff
+  --oil-card-color: inherit
 
   // -------------------- colors
   --accent: #a1905e

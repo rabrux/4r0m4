@@ -7,14 +7,22 @@
     flex: 1
     display: flex
     flex-direction: column
+    padding: var( --air )
+    gap: var( --air )
+    border-radius: var( --size-2x )
+
+    background: var( --oil-card-background )
+    color: var( --oil-card-color )
 
     .header
       display: flex
       gap: var( --air )
+      cursor: pointer
 
       .icon
         align-self: flex-start
-        width: 140px
+        width: 112px
+        border-radius: var( --size-2x )
 
       .title
         flex: 1
@@ -25,6 +33,9 @@
           font-size: var( --size-4x )
 
         i
+          font-size: var( --size-2x )
+
+        .note
           font-size: var( --size-2x )
 
     .tags

@@ -6,6 +6,7 @@ import App from 'App'
 import Redirect from 'components/Redirect'
 import Main from 'sections/main'
 import AceitesEsenciales from 'sections/aceites-esenciales'
+import OilDetail from 'sections/aceites-esenciales/Detail'
 
 import reportWebVitals from 'reportWebVitals'
 import 'skin/index.sass'
@@ -19,7 +20,9 @@ root.render(
         <Route path="/" Component={ App }>
           <Route path="main" Component={ Main } />
 
-          <Route path="aceites-esenciales" Component={ AceitesEsenciales } />
+          <Route path="aceites-esenciales" Component={ AceitesEsenciales }>
+            <Route path=":name" Component={ OilDetail } />
+          </Route>
 
           <Route
             index
