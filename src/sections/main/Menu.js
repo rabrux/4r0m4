@@ -8,6 +8,10 @@ const menu = [
     label: 'aceites esenciales'
   },
   {
+    to: '/sinergia',
+    label: 'sinergias'
+  },
+  {
     to: '/la-magia-del-perfume',
     label: 'la magia del perfume'
   },

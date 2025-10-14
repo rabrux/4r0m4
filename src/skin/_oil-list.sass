@@ -21,7 +21,7 @@
 
       .icon
         align-self: flex-start
-        width: 112px
+        width: 105px
         border-radius: var( --size-2x )
 
       .title
@@ -48,6 +48,7 @@
         color: var( --tag-color )
         padding: calc( var( --air ) * 0.7 )
         font-size: var( --size-2x1 )
+        border-radius: var( --size )
 
     &:nth-child(even)
 
@@ -58,3 +59,21 @@
       .header
         .title
           align-items: end
+
+@media screen and (max-width: 375px)
+  .oil-list
+
+    .oil-card
+      .header
+        .title
+          h1
+            font-size: var( --size-3x5 )
+
+@media screen and (max-width: 310px )
+  .oil-list
+
+    .oil-card
+      .header
+        .title
+          h1
+            font-size: var( --size-2x8 )

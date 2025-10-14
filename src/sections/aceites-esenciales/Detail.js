@@ -60,10 +60,16 @@ const Detail = () => {
         key={ index }
       >{ desc }</Markdown> ) }
 
-      <h2>usos</h2>
+      { oil.uses?.length > 0 ? <h2>usos</h2> : null }
       { oil.uses?.map( ( use, index ) => <p
         key={ index }
         ><b>{ use.label || use.name }</b> { use.description }</p> ) }
+
+      { oil.concerns?.length > 0 ? <h2>consideraciones</h2> : null }
+      { oil.concerns?.map( ( desc, index ) => <Markdown
+        key={ index }
+      >{ desc }</Markdown> ) }
+
     </section>
   </div>
 }

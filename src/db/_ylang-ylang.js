@@ -11,8 +11,6 @@ export default {
     'los componentes aromáticos del aceite de ylang-ylang son benzil acetato, linalol y p-cresil metil éter y metil benzoato, responsable de su característico olor.',
     '## componentes activos',
     'eugenol, geraniol, linalol, safrol, ylangol, terpenos, pineno, benzoato de bencilo, y una combinación de ácidos acético, benzoico, fórmico, salicílico y valérico.',
-    '## precausiones',
-    'no excederse en la dosificación, puede provocar nauseas o cefaleas. es importante en esta esencia en particular que antes de usarla se pruebe los efectos del aroma en la persona, porque así como en algunas personas resulta muy atrayente en otras puede resultar repulsiva y provocar malestares emocionales y físicos.'
   ],
   uses: [
     {
@@ -36,6 +34,9 @@ export default {
       name: 'vasodilatador',
       description: 'debido a que contiene ácido salicílico, ayuda a bajar un poco la presión arterial.'
     }
+  ],
+  concerns: [
+    'no excederse en la dosificación, puede provocar nauseas o cefaleas. es importante en esta esencia en particular que antes de usarla se pruebe los efectos del aroma en la persona, porque así como en algunas personas resulta muy atrayente en otras puede resultar repulsiva y provocar malestares emocionales y físicos.'
   ],
   tags: [
     'regenerador celular',

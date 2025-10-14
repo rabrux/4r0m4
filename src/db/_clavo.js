@@ -23,7 +23,7 @@ export default {
     },
     {
       name: 'antibacteriano',
-      description: 'es útil para conbatir infecciones. gracias también a su propiedades analgésicas es muy utilizado en procedimientos odontológicos como anestésico local.'
+      description: 'es útil para combatir infecciones. gracias también a su propiedades analgésicas es muy utilizado en procedimientos odontológicos como anestésico local.'
     },
     {
       name: 'afrodisiaco',
@@ -47,6 +47,9 @@ export default {
       name: 'piel',
       description: 'ayudar a abordar problemas de piel como verrugas, acné, flacidez y arrugas.'
     }
+  ],
+  concerns: [
+    'emplear siempre bien diluido en proporciones no mayores al 1%. puede causar dermatitis, alergia o irritación. es irritante de mucuosas.'
   ],
   tags: [
     'analgésico',
