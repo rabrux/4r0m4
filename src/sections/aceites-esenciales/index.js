@@ -6,10 +6,7 @@ import { FiHome, FiSearch, FiX } from 'react-icons/fi'
 import { PiMusicNote } from 'react-icons/pi'
 
 import { oilList } from 'db'
-
-const normalize = ( str ) => {
-  return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-}
+import normalize from 'fn/normalize'
 
 const AceitesEsenciales = () => {
   const navigate = useNavigate()

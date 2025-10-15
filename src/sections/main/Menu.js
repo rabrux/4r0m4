@@ -11,54 +11,54 @@ const menu = [
     to: '/sinergia',
     label: 'sinergias'
   },
-  {
-    to: '/la-magia-del-perfume',
-    label: 'la magia del perfume'
-  },
-  {
-    to: '/aroma-vs-humor-efluvio',
-    label: 'aroma vs humor efluvio'
-  },
-  {
-    to: '/clasificacion-estimulos-odorificos',
-    label: 'clasificacion de los estimulos odorificos y su uso en el masaje'
-  },
-  {
-    to: '/aspecto-historico-perfume',
-    label: 'aspecto historico del perfume'
-  },
-  {
-    to: '/desarrollo-historico-aromaterapia',
-    label: 'desarrollo historico de la aromaterapia'
-  },
-  {
-    to: '/familias-basicas-de-fragancias',
-    label: 'familias basicas de fragancias'
-  },
-  {
-    to: '/psicoesencias',
-    label: 'psicoesencias'
-  },
-  {
-    to: '/sistema-nervioso',
-    label: 'sistema nervioso'
-  },
-  {
-    to: '/cultura-aceite',
-    label: 'cultura del aceite'
-  },
-  {
-    to: '/clasificacion-aromas',
-    label: 'clasificacion de los aromas'
-  },
-  {
-    to: '/cinco-elementos',
-    label: 'los cinco elementos'
-  },
-  {
-    to: '/glosario',
-    label: 'glosario'
-  },
+  // {
+  //   to: '/la-magia-del-perfume',
+  //   label: 'la magia del perfume'
+  // },
+  // {
+  //   to: '/aroma-vs-humor-efluvio',
+  //   label: 'aroma vs humor efluvio'
+  // },
+  // {
+  //   to: '/clasificacion-estimulos-odorificos',
+  //   label: 'clasificacion de los estimulos odorificos y su uso en el masaje'
+  // },
+  // {
+  //   to: '/aspecto-historico-perfume',
+  //   label: 'aspecto historico del perfume'
+  // },
+  // {
+  //   to: '/desarrollo-historico-aromaterapia',
+  //   label: 'desarrollo historico de la aromaterapia'
+  // },
+  // {
+  //   to: '/familias-basicas-de-fragancias',
+  //   label: 'familias basicas de fragancias'
+  // },
+  // {
+  //   to: '/psicoesencias',
+  //   label: 'psicoesencias'
+  // },
+  // {
+  //   to: '/sistema-nervioso',
+  //   label: 'sistema nervioso'
+  // },
+  // {
+  //   to: '/cultura-aceite',
+  //   label: 'cultura del aceite'
+  // },
+  // {
+  //   to: '/clasificacion-aromas',
+  //   label: 'clasificacion de los aromas'
+  // },
+  // {
+  //   to: '/cinco-elementos',
+  //   label: 'los cinco elementos'
+  // },
+  // {
+  //   to: '/glosario',
+  //   label: 'glosario'
+  // },
 ]
 
 const Menu = ( {
@@ -77,7 +77,7 @@ const Menu = ( {
     </header>
 
     <section className="one hs">
-      <ul>
+      <ul className="simple-list">
         { menu
           .map( ( { to, label }, index ) => <li
             key={ index }

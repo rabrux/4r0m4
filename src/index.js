@@ -10,6 +10,7 @@ import AceitesEsenciales from 'sections/aceites-esenciales'
 import OilDetail from 'sections/aceites-esenciales/Detail'
 
 import Sinergia from 'sections/sinergia'
+import SynergyDetail from 'sections/sinergia/Detail'
 
 import reportWebVitals from 'reportWebVitals'
 import 'skin/index.sass'
@@ -28,6 +29,7 @@ root.render(
           </Route>
 
           <Route path="sinergia" Component={ Sinergia }>
+            <Route path=":name" Component={ SynergyDetail } />
           </Route>
 
           <Route
