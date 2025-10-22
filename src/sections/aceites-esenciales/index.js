@@ -91,7 +91,7 @@ const AceitesEsenciales = () => {
             <img
               className="icon"
               src={ oil.icon }
-              alt={ oil.name }
+              alt={ oil.label || oil.name }
             />
 
             <div className="title">

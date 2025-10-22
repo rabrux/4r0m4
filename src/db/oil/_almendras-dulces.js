@@ -1,7 +1,8 @@
 import icon from 'assets/almendras-dulces.jpg'
 
 export default {
-  name: 'almendras dulces',
+  name: 'almendras-dulces',
+  label: 'almendras dulces',
   sci: 'prunus dulcis',
   icon,
   note: 'base o vehícular',

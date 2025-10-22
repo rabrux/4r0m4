@@ -1,7 +1,8 @@
 import icon from 'assets/sandalo.jpg'
 
 export default {
-  name: 'sándalo',
+  name: 'sandalo',
+  label: 'sándalo',
   sci: 'santalus album',
   icon,
   note: 'baja',

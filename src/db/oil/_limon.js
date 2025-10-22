@@ -1,7 +1,8 @@
 import icon from 'assets/limon.jpg'
 
 export default {
-  name: 'limón',
+  name: 'limon',
+  label: 'limón',
   sci: 'citrus limon',
   icon,
   note: 'alta',

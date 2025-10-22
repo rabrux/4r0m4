@@ -1,7 +1,8 @@
 import icon from 'assets/argan.jpg'
 
 export default {
-  name: 'argán',
+  name: 'argan',
+  label: 'argán',
   sci: 'argania spinosa',
   icon,
   note: 'base o vehícular',

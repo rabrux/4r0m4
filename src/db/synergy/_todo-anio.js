@@ -1,6 +1,6 @@
 export default {
   name: 'todo-anio',
-  name: 'todo el año',
+  label: 'todo el año',
   formula: [
     {
       name: 'aceite esencial de naranja',

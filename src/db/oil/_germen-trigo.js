@@ -1,7 +1,8 @@
 import icon from 'assets/germen-trigo.jpg'
 
 export default {
-  name: 'germen de trigo',
+  name: 'germen-trigo',
+  label: 'germen de trigo',
   sci: 'triticum aestivum',
   icon,
   note: 'base o vehícular',

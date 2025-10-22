@@ -1,7 +1,8 @@
 import icon from 'assets/ylang-ylang.jpg'
 
 export default {
-  name: 'ylang ylang',
+  name: 'ylang-ylang',
+  label: 'ylang ylang',
   sci: 'cananga odorata',
   icon,
   note: 'baja',
