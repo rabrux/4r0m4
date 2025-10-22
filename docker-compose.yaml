@@ -1,0 +1,6 @@
+services:
+  client:
+    image: local/4r0m4
+    restart: always
+    ports:
+      - 8080:80
