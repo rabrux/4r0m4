@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import Markdown from 'react-markdown'
 
 import { synergyList } from 'db'
 
@@ -55,7 +56,7 @@ const Detail = () => {
         { synergy.notes?.map( ( note, index ) => <blockquote
           key={ index }
         >
-          { note }
+          <Markdown>{ note }</Markdown>
         </blockquote>) }
       </div>
 
@@ -79,7 +80,7 @@ const Detail = () => {
             { recipe.notes?.map( ( note, index ) => <blockquote
               key={ index }
             >
-              { note }
+              <Markdown>{ note }</Markdown>
             </blockquote>) }
           </> ) }
         </div>
