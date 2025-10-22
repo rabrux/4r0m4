@@ -1,6 +1,5 @@
 export default {
   name: 'pies',
-  label: 'pies',
   notes: [
     'para pies olorosos aumentar a 4 ml de hierbabuena y aumentar la menta a 0.6 ml.',
     'para pies cansados agregar árnica 2.5 ml.',

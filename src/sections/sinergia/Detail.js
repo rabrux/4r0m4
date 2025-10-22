@@ -51,6 +51,12 @@ const Detail = () => {
             <b>{ ingredient.quantity } { ingredient.unit }</b>
           </li> ) }
         </ul>
+
+        { synergy.notes?.map( ( note, index ) => <blockquote
+          key={ index }
+        >
+          { note }
+        </blockquote>) }
       </div>
 
       { synergy.recipes?.length > 0 ? <div className="one hs gap">
@@ -69,6 +75,12 @@ const Detail = () => {
                 <b>{ ingredient.quantity } { ingredient.unit }</b>
               </li> ) }
             </ul>
+
+            { recipe.notes?.map( ( note, index ) => <blockquote
+              key={ index }
+            >
+              { note }
+            </blockquote>) }
           </> ) }
         </div>
       </div> : null }
